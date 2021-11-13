@@ -1,0 +1,218 @@
+:root {
+  --primary-paragraph-color: #757575;
+  --primary-active-color: #2196f3;
+  --secondary-logo-color: #000000;
+  --primary-header-color: #212121;
+  --primary-text-color-light: #ffffff;
+  --secondary-text-color-light: rgba(255, 255, 255, 0.6);
+  --icon-backrgound-color: #afb1b8;
+  --icon-backrgound-color-features: #f5f4fa;
+  --icon-backrgound-color-footer: rgba(255, 255, 255, 0.1);
+  --primary-background-color: #2f303a;
+  --secondary-background-color: rgba(47, 48, 58, 0.4);
+  --main-border-radius: 4px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--primary-text-color-light);
+  letter-spacing: 0.03em;
+}
+
+/*Logo*/
+.logo {
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--primary-active-color);
+}
+
+.logo .logo-black-color {
+  color: var(--secondary-logo-color);
+}
+
+.logo .logo-white-color {
+  color: var(--primary-text-color-light);
+}
+
+/*Button*/
+.btn {
+  padding: 6px 22px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  background-color: var(--icon-backrgound-color-features);
+  color: var(--primary-header-color);
+  border: none;
+  cursor: pointer;
+  border-radius: var(--main-border-radius);
+  -webkit-border-radius: var(--main-border-radius);
+  -moz-border-radius: var(--main-border-radius);
+  -ms-border-radius: var(--main-border-radius);
+  -o-border-radius: var(--main-border-radius);
+}
+
+.btn-active,
+.btn:hover,
+.btn:focus {
+  background-color: var(--primary-active-color);
+  color: var(--primary-text-color-light);
+}
+
+/*Utility*/
+.list-style-none {
+  list-style: none;
+}
+
+.text-aligned-center {
+  text-align: center;
+}
+
+/*Header*/
+.site-nav,
+.contacts {
+  font-size: 14px;
+  line-height: 1.14;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.site-nav-link,
+.contacts-link,
+.card-link {
+  text-decoration: none;
+}
+
+.site-nav-link,
+.site-nav-link:visited {
+  color: var(--primary-header-color);
+}
+
+.contacts-link,
+.contacts-link:visited {
+  color: var(--primary-paragraph-color);
+}
+
+.site-nav-link.site-nav-link-current,
+.site-nav-link:hover,
+.site-nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--primary-active-color);
+}
+
+/*section-hero*/
+.section-hero {
+  color: var(--primary-text-color-light);
+  background: var(--primary-background-color);
+  text-align: center;
+}
+
+.header-hero {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.btn-hero {
+  padding: 10px 32px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color-light);
+  background-color: var(--primary-active-color);
+  border: none;
+  cursor: pointer;
+  border-radius: var(--main-border-radius);
+  -webkit-border-radius: var(--main-border-radius);
+  -moz-border-radius: var(--main-border-radius);
+  -ms-border-radius: var(--main-border-radius);
+  -o-border-radius: var(--main-border-radius);
+}
+
+/*Our characteristics*/
+.list-chars {
+  font-size: 14px;
+}
+
+.list-chars-header {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-header-color);
+}
+
+.list-chars-text {
+  line-height: 1.71;
+  color: var(--primary-paragraph-color);
+}
+
+/*What we do*/
+.header-what-we-do,
+.header-our-team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--primary-header-color);
+}
+
+/*Our team*/
+
+.section-our-team {
+  background-color: var(--icon-backrgound-color-features);
+}
+
+.team-member {
+  background-color: var(--primary-text-color-light);
+  width: 270px;
+}
+
+/*Footer*/
+.footer {
+  background-color: var(--primary-background-color);
+}
+
+.address-list-item {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--primary-text-color-light);
+}
+
+.address-list-item:first-child .contacts-link {
+  color: var(--primary-text-color-light);
+}
+
+.address-list-item .contacts-link,
+.address-list-item .contacts-link:visited {
+  color: var(--secondary-text-color-light);
+}
+
+.address-list-item .contacts-link:hover,
+.address-list-item .contacts-link:focus {
+  color: var(--primary-active-color);
+}
+
+/*Portfolio*/
+/*Cards*/
+.card-header {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-header-color);
+}
+
+.card-category {
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--primary-paragraph-color);
+}
