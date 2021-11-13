@@ -104,8 +104,8 @@ body {
   color: var(--primary-active-color);
 }
 
-/*section-hero*/
-.section-hero {
+/*Hero*/
+.hero {
   color: var(--primary-text-color-light);
   background: var(--primary-background-color);
   text-align: center;
@@ -165,8 +165,7 @@ body {
 }
 
 /*Our team*/
-
-.section-our-team {
+.our-team {
   background-color: var(--icon-backrgound-color-features);
 }
 
