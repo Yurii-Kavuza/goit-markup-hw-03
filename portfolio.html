@@ -9,163 +9,203 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+      integrity="sha512-Y0MM+V6ymRKN2zStTqzQ227DWhhp4Mzdo6gnlRnuaNCbc+YN/ZH0sBCLTM4M0oSy9c9VKiCvd4Jk44aCLrNS5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <nav>
-        <a href="./" class="logo"
-          ><span lang="en">Web<span class="logo-black-color">Studio</span></span></a
-        >
-
-        <ul class="site-nav list-style-none">
-          <li><a href="./" class="site-nav-link">Студия</a></li>
-          <li><a href="" class="site-nav-link site-nav-link-current">Портфолио</a></li>
-          <li><a href="" class="site-nav-link">Контакты</a></li>
+      <div class="container header-container">
+        <nav class="main-nav">
+          <a href="./" class="logo"
+            ><span lang="en">Web<span class="logo-black-color">Studio</span></span></a
+          >
+          <ul class="site-nav list">
+            <li class="item"><a href="./" class="site-nav-link link">Студия</a></li>
+            <li class="item">
+              <a href="" class="site-nav-link link site-nav-link-current">Портфолио</a>
+            </li>
+            <li class="item"><a href="" class="site-nav-link link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="contacts-link link">info@devstudio.com</a>
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="contacts-link link">+38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="contacts list-style-none">
-        <li><a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a></li>
-      </ul>
+      </div>
     </header>
     <main>
       <!--Our works-->
-      <section>
-        <h1 style="visibility: hidden">Наши работы</h1>
-        <ul class="list-style-none">
-          <li>
-            <button type="button" class="btn btn-active">Все</button>
-          </li>
-          <li>
-            <button type="button" class="btn">Веб-сайты</button>
-          </li>
-          <li>
-            <button type="button" class="btn">Приложения</button>
-          </li>
-          <li>
-            <button type="button" class="btn">Дизайн</button>
-          </li>
-          <li>
-            <button type="button" class="btn">Маркетинг</button>
-          </li>
-        </ul>
-        <ul class="cards list-style-none">
-          <li class="card">
-            <a href="" class="card-link">
-              <img
-                src="./images/portfolio/technocrack.jpg"
-                alt="Ноутбук с открытым сайтом фирмы Технокряк"
-                width="370"
-              />
-              <h2 class="card-header">Технокряк</h2>
-              <p class="card-category">Веб-сайт</p>
-            </a>
-          </li>
-          <li class="card">
-            <a href="" class="card-link">
-              <img
-                src="./images/portfolio/new-orlean-vs-golden-star.jpg"
-                alt="Постер. Баскетболист New Orlean против баскетболиста Golden Star"
-                width="370"
-              />
-              <h2 class="card-header">Постер <span lang="en">Orlean vs Golden Star</span></h2>
-              <p class="card-category">Дизайн</p>
-            </a>
-          </li>
-          <li class="card">
-            <a href="" class="card-link">
-              <img
-                src="./images/portfolio/the-seafood-restaurant.jpg"
-                alt="Надпись Зэ Сифуд Ресторан на фоне изображения рыбы"
-                width="370"
-              />
-              <h2 class="card-header">Ресторан <span lang="en">Seafood</span></h2>
-              <p class="card-category">Приложение</p>
-            </a>
-          </li>
-          <li class="card">
-            <a href="" class="card-link">
-              <img src="./images/portfolio/black-headset.jpg" alt="Черные наушники" width="370" />
-              <h2 class="card-header">Проект <span lang="en">Prime</span></h2>
-              <p class="card-category">Маркетинг</p>
-            </a>
-          </li>
-          <li class="card">
-            <a href="" class="card-link">
-              <img
-                src="./images/portfolio/two-boxes.jpg"
-                alt="Две картонные коробки. Одна белая, а вторая бежевая"
-                width="370"
-              />
-              <h2 class="card-header">Проект <span lang="en">Boxes</span></h2>
-              <p class="card-category">Приложение</p>
-            </a>
-          </li>
-          <li class="card">
-            <a href="" class="card-link">
-              <img
-                src="./images/portfolio/black-monitor.jpg"
-                alt="Инфографика на черном фоне монитора"
-                width="370"
-              />
-              <h2 class="card-header"><span lang="en">Inspiration has no Borders</span></h2>
-              <p class="card-category">Веб-сайт</p>
-            </a>
-          </li>
-          <li class="card">
-            <a href="" class="card-link">
-              <img
-                src="./images/portfolio/publisher-limited-edition.jpg"
-                alt="Разворот журнала Лимитэд Эдишн"
-                width="370"
-              />
-              <h2 class="card-header">Издание <span lang="en">Limited Edition</span></h2>
-              <p class="card-category">Дизайн</p>
-            </a>
-          </li>
-          <li class="card">
-            <a href="" class="card-link">
-              <img src="./images/portfolio/project-lab.jpg" alt="Бирка ЛАБ" width="370" />
-              <h2 class="card-header">Проект <span lang="en">LAB</span></h2>
-              <p class="card-category">Маркетинг</p>
-            </a>
-          </li>
-          <li class="card">
-            <a href="" class="card-link">
-              <img
-                src="./images/portfolio/laptop-growing-business.jpg"
-                alt="Запущеное приложение на ноутбуке"
-                width="370"
-              />
-              <h2 class="card-header"><span lang="en">Growing Business</span></h2>
-              <p class="card-category">Приложение</p>
-            </a>
-          </li>
-        </ul>
+      <section class="our-works">
+        <div class="container">
+          <h1 class="visually-hidden">Наши работы</h1>
+          <ul class="categories list">
+            <li class="item">
+              <button type="button" class="btn btn-active">Все</button>
+            </li>
+            <li class="item">
+              <button type="button" class="btn">Веб-сайты</button>
+            </li>
+            <li class="item">
+              <button type="button" class="btn">Приложения</button>
+            </li>
+            <li class="item">
+              <button type="button" class="btn">Дизайн</button>
+            </li>
+            <li class="item">
+              <button type="button" class="btn">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="cards list">
+            <li class="card">
+              <a href="" class="card-link link">
+                <img
+                  src="./images/portfolio/technocrack.jpg"
+                  alt="Ноутбук с открытым сайтом фирмы Технокряк"
+                  width="370"
+                />
+                <div class="card-info">
+                  <h2 class="card-header">Технокряк</h2>
+                  <p class="card-category">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a href="" class="card-link link">
+                <img
+                  src="./images/portfolio/new-orlean-vs-golden-star.jpg"
+                  alt="Постер. Баскетболист New Orlean против баскетболиста Golden Star"
+                  width="370"
+                />
+                <div class="card-info">
+                  <h2 class="card-header">Постер <span lang="en">Orlean vs Golden Star</span></h2>
+                  <p class="card-category">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a href="" class="card-link link">
+                <img
+                  src="./images/portfolio/the-seafood-restaurant.jpg"
+                  alt="Надпись Зэ Сифуд Ресторан на фоне изображения рыбы"
+                  width="370"
+                />
+                <div class="card-info">
+                  <h2 class="card-header">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="card-category">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a href="" class="card-link link">
+                <img src="./images/portfolio/black-headset.jpg" alt="Черные наушники" width="370" />
+                <div class="card-info">
+                  <h2 class="card-header">Проект <span lang="en">Prime</span></h2>
+                  <p class="card-category">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a href="" class="card-link link">
+                <img
+                  src="./images/portfolio/two-boxes.jpg"
+                  alt="Две картонные коробки. Одна белая, а вторая бежевая"
+                  width="370"
+                />
+                <div class="card-info">
+                  <h2 class="card-header">Проект <span lang="en">Boxes</span></h2>
+                  <p class="card-category">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a href="" class="card-link link">
+                <img
+                  src="./images/portfolio/black-monitor.jpg"
+                  alt="Инфографика на черном фоне монитора"
+                  width="370"
+                />
+                <div class="card-info">
+                  <h2 class="card-header"><span lang="en">Inspiration has no Borders</span></h2>
+                  <p class="card-category">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a href="" class="card-link link">
+                <img
+                  src="./images/portfolio/publisher-limited-edition.jpg"
+                  alt="Разворот журнала Лимитэд Эдишн"
+                  width="370"
+                />
+                <div class="card-info">
+                  <h2 class="card-header">Издание <span lang="en">Limited Edition</span></h2>
+                  <p class="card-category">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a href="" class="card-link link">
+                <img src="./images/portfolio/project-lab.jpg" alt="Бирка ЛАБ" width="370" />
+                <div class="card-info">
+                  <h2 class="card-header">Проект <span lang="en">LAB</span></h2>
+                  <p class="card-category">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="card">
+              <a href="" class="card-link link">
+                <img
+                  src="./images/portfolio/laptop-growing-business.jpg"
+                  alt="Запущеное приложение на ноутбуке"
+                  width="370"
+                />
+                <div class="card-info">
+                  <h2 class="card-header"><span lang="en">Growing Business</span></h2>
+                  <p class="card-category">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <a href="./" class="logo">Web<span class="logo-white-color">Studio</span></a>
-      <address>
-        <ul class="address-list list-style-none">
-          <li class="address-list-item">
-            <a
-              href="https://goo.gl/maps/h8XBH1C1pmBuiniH7"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="contacts-link"
-              >г. Киев, пр-т Леси Украинки, 26</a
-            >
-          </li>
-          <li class="address-list-item">
-            <a href="mailto:info@devstudio.com" class="contacts-link">info@devstudio.com</a>
-          </li>
-          <li class="address-list-item">
-            <a href="tel:+380961111111" class="contacts-link">+38 096 111 11 11</a>
-          </li>
-        </ul>
-      </address>
+      <div class="container">
+        <div class="left-part">
+          <a href="./" class="logo">Web<span class="logo-white-color">Studio</span></a>
+          <address>
+            <ul class="address-list list">
+              <li class="item">
+                <a
+                  href="https://goo.gl/maps/h8XBH1C1pmBuiniH7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="contacts-link link"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="contacts-link link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="item">
+                <a href="tel:+380961111111" class="contacts-link link">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
