@@ -248,7 +248,7 @@ img {
 }
 
 .list-chars > .item {
-  width: calc((100% - 90px) / 4);
+  flex-basis: calc((100% - 90px) / 4);
 }
 
 .list-chars > .item:not(:last-child) {
@@ -280,7 +280,7 @@ img {
 }
 
 .list-what-we-do > .item {
-  width: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
   margin-right: 30px;
 }
 
@@ -312,7 +312,7 @@ img {
 
 .team-member {
   background-color: var(--primary-text-color-light);
-  width: calc((100% - 90px) / 4);
+  flex-basis: calc((100% - 90px) / 4);
   margin-right: 30px;
 
   border-radius: 0px 0px 4px 4px;
@@ -413,7 +413,7 @@ img {
 }
 
 .card {
-  width: calc((100% - 60px) / 3);
+  flex-basis: calc((100% - 60px) / 3);
   margin-bottom: 30px;
   border: 1px solid var(--card-border-color);
 }
